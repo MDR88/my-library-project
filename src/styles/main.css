@@ -1,5 +1,16 @@
 .main-div-container {
-    background-color: aquamarine;
-    }
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f6475;
+    border: 2px solid black;
+    color: whitesmoke;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     
-    
+}
