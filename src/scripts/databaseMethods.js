@@ -1,12 +1,12 @@
 const $ = require("jquery");
 
-const databaseMethods = Object.create( {}, {
-    addBooks: {
-        value: (articles) => {
+const databaseMethods = Object.create({}, {
+    addBook: {
+        value: (book) => {
             return $.ajax({
                 url: "http://localhost:3000/books",
                 method: "POST",
-                data: books
+                data: book
             })
         }
     },
@@ -17,42 +17,25 @@ const databaseMethods = Object.create( {}, {
         }
     },
 
-    getBook: {
-        value: (id) => {
-            return $.ajax(`http://localhost:3000/books/${id}`)
-        }
-    },
+    // getBook: {
+    //     value: (id) => {
+    //         return $.ajax(`http://localhost:3000/books/${id}`)
+    //     }
+    // },
 
-    deleteBooks: {
-        value: (id) => {
-            return $.ajax({
-                url: `http://localhost:3000/books/${id}`,
-                method: "DELETE"
-            })
-        },
+    // deleteBooks: {
+    //     value: (id) => {
+    //         return $.ajax({
+    //             url: `http://localhost:3000/books/${id}`,
+    //             method: "DELETE"
+    //         })
+    //     },
 
-        putBook: {
-            value: (id) => {
-                $.ajax({
-                    url: `http://localhost:3000/books/${id}`,
-                    method: "PUT"
-                })
-            }
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //     putBook: {
+    //         value: (id) => {
+    //             $.ajax({
+    //                 url: `http://localhost:3000/books/${id}`,
+    //                 method: "PUT"})
 }
-
-
 )
+module.exports = databaseMethods;

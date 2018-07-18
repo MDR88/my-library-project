@@ -1,4 +1,5 @@
 const $ = require("jquery")
+const printToDOM = require("./printToDOM")
 
 
 //I am creating an object "homePageObject" that will load when landing on the page.
@@ -22,6 +23,7 @@ const homePageObject = Object.create({}, {
         $divMainPage.appendTo(mainDiv);
         $paraEl.appendTo($divMainPage);
         $formBtn.appendTo($paraEl);
+        printToDOM.addBookToDom()
     }
     }
     })
