@@ -12,7 +12,6 @@
             "error",
             "double"
         ],
-        "eqeqeq": 2,
-        "no-trailing-spaces": 2
+        "eqeqeq": 2
     }
 }

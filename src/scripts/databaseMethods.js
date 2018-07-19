@@ -17,6 +17,18 @@ const databaseMethods = Object.create({}, {
         }
     },
 
+    bookComplete: {
+        value: (Id) => {
+            return $.ajax({
+                url: `http://localhost:3000/books/${Id}`,
+                type: "PATCH",
+                data: {
+                    read: true
+                }
+            })
+        }
+    },
+
     // getBook: {
     //     value: (id) => {
     //         return $.ajax(`http://localhost:3000/books/${id}`)
