@@ -1,10 +1,17 @@
 //Clears The DOM.
 
-const clear = () => {
+const clearBookShelf = () => {
+    const container = document.querySelector("#bookShelfDiv");
+    while (container.firstElementChild) {
+        container.removeChild(container.firstElementChild);
+    };
+};
+
+const clearAll = () => {
     const container = document.querySelector(".main-div-container");
     while (container.firstElementChild) {
         container.removeChild(container.firstElementChild);
     };
 };
 
-module.exports = clear;
+module.exports = {clearBookShelf, clearAll}

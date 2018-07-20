@@ -9,8 +9,9 @@ const printToDOM = require("./printToDOM")
 const body = document.querySelector(".main-div-container");
 //If the button with the ID "form-btn" is clicked then it will clear and add the AddBookForm.addBook form object on the AddBookForm module.
 body.addEventListener("click", () => {
+  
     if (event.target.id === "form-btn") {
-        clear()
+        clear.clearAll()
         AddBookForm.addBookForm();
 
 //If the button with the ID 'bookSubmit' is clicked it will capture the values of the three input fields.
@@ -22,7 +23,7 @@ body.addEventListener("click", () => {
         const $bookNameValue = document.getElementById("book-title").value;
         const $bookSumValue = document.getElementById("book-Sum").value;
         const $bookPagesValue = document.getElementById("book-pages").value
-        //After the input fields are captured it puts the values that are stored in a varible "$bookNameValue, BookSum Valule and Book Pages".
+        //After the input fields are captured it puts the values that are stored in a varible "$bookNameValue, BookSum Valule and Book Pages in an object called BOOK".
         //Next the book
         const book = {
             bookTitle: $bookNameValue,
@@ -30,11 +31,26 @@ body.addEventListener("click", () => {
             bookPages: $bookPagesValue
 
         }
-        databaseMethods.addBook(book)
-        printToDOM.addBookToDom()
-    } if (event.target.id === "checkBox") {
-        console.log("checkBox")
-     databaseMethods.bookComplete(event.target.parentNode.id)   
-     console.log(event.target.parentNode.id)
+        
+        databaseMethods.addBook(book).then((response) => {
+            clear.clearBookShelf()
+            printToDOM.addBookToDom()
+            // welcome.buildHome()
+
+        }) 
+        
     }
 })
+    const bookShelf = document.querySelector("#bookShelfDiv");
+bookShelf.addEventListener("click", () => {
+
+    if (event.target.className === "checkBox") {
+        console.log("checkBox")
+     databaseMethods.bookComplete(event.target.parentNode.id).then(()=> {
+        clear.clearBookShelf()
+        printToDOM.addBookToDom()
+     }
+     )   
+    }
+})
+

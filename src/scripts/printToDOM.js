@@ -8,15 +8,21 @@ const addBookToDOM = Object.create({}, {
     addBookToDom: {
         value: () => {
 
-            databaseMethods.getAllBooks().then((books) => {
+            const bookSHelfDiv = document.querySelector("#bookShelfDiv")
+            databaseMethods.getAllBooks().then((books) => 
+        
+            
+            {
+               
                 books.forEach(book => {
                     if (!book.read) {
                     const $cardDiv = $("<div>").addClass("cardDiv").attr("Id",`${book.id}` )
                     const $h1Title = $("<h1>").addClass("h1Title").text(`${book.bookTitle}`).appendTo($cardDiv)
                     const $pElPages = $("<p>").addClass("pElPages").text(`${book.bookPages}`).appendTo($cardDiv)
                     const $pElSum = $("<p>").addClass("pElSum").text(`${book.bookSum}`).appendTo($cardDiv)
-                    const $checkBox = $("<input />").attr("type", "checkbox").attr("id", "checkBox").appendTo($cardDiv)
-                    $cardDiv.appendTo($(".main-div-container"))
+                    const $checkBoxLabel = $("<label>").text("Click When Read").appendTo($cardDiv)
+                    const $checkBox = $("<input />").attr("type", "checkbox").addClass("checkBox").appendTo($cardDiv)
+                    $cardDiv.appendTo(bookSHelfDiv)
                     }
                     //     const bTitle = $("#book-title").val()
                     //     const bSum = $("#book-Sum").val()

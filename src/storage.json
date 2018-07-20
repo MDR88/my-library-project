@@ -8,84 +8,36 @@
       "read": "true"
     },
     {
-      "bookTitle": "test",
-      "bookSum": "book",
-      "bookPages": "summ",
-      "id": 2,
-      "read": "true"
+      "bookTitle": "new",
+      "bookSum": "1",
+      "bookPages": "1",
+      "id": 2
     },
     {
-      "bookTitle": "dsfsf",
-      "bookSum": "sdfd",
-      "bookPages": "sdfd",
-      "id": 3,
-      "read": "true"
+      "bookTitle": "2",
+      "bookSum": "2",
+      "bookPages": "2",
+      "id": 3
     },
     {
-      "bookTitle": "rere",
-      "bookSum": "fgff",
-      "bookPages": "xcxcxx",
+      "bookTitle": "new title",
+      "bookSum": "fdsffdsf",
+      "bookPages": "545455",
       "id": 4,
       "read": "true"
     },
     {
-      "bookTitle": "fsdf",
-      "bookSum": "sdfsd",
-      "bookPages": "sdfd",
+      "bookTitle": "sdfdsfs",
+      "bookSum": "3d33d",
+      "bookPages": "dsfd",
       "id": 5,
       "read": "true"
     },
     {
-      "bookTitle": "csfdf",
-      "bookSum": "sdfd",
-      "bookPages": "sdfds",
-      "id": 6
-    },
-    {
-      "bookTitle": "cxvcx",
-      "bookSum": "xcvvc",
-      "bookPages": "xcvc",
-      "id": 7,
-      "read": "true"
-    },
-    {
-      "bookTitle": "sdfds",
-      "bookSum": "sdfsd",
-      "bookPages": "sdfd",
-      "id": 8,
-      "read": "true"
-    },
-    {
-      "bookTitle": "dsas",
-      "bookSum": "dass",
-      "bookPages": "sad",
-      "id": 9
-    },
-    {
-      "bookTitle": "dsfsd",
-      "bookSum": "fdsf",
-      "bookPages": "dsfds",
-      "id": 10,
-      "read": "true"
-    },
-    {
-      "bookTitle": "title",
-      "bookSum": "summ",
-      "bookPages": "45",
-      "id": 11,
-      "read": "true"
-    },
-    {
-      "bookTitle": "title",
-      "bookSum": "summ",
-      "bookPages": "45",
-      "id": 12
-    },
-    {
-      "bookTitle": "dsf",
-      "bookSum": "sdfd",
-      "bookPages": "dsf",
-      "id": 13,
+      "bookTitle": "working",
+      "bookSum": "working",
+      "bookPages": "working",
+      "id": 6,
       "read": "true"
     }
   ]
