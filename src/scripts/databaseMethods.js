@@ -16,6 +16,12 @@ const databaseMethods = Object.create({}, {
             return $.ajax("http://localhost:3000/books")
         }
     },
+    getBook: {
+        value: (Id) => {
+        return $.ajax((`http://localhost:3000/books/${Id}`))
+
+        }
+    },
 
     bookComplete: {
         value: (Id) => {
@@ -28,12 +34,6 @@ const databaseMethods = Object.create({}, {
             })
         }
     },
-
-    // getBook: {
-    //     value: (id) => {
-    //         return $.ajax(`http://localhost:3000/books/${id}`)
-    //     }
-    // },
 
     // deleteBooks: {
     //     value: (id) => {

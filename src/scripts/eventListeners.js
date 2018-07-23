@@ -49,8 +49,19 @@ bookShelf.addEventListener("click", () => {
      databaseMethods.bookComplete(event.target.parentNode.id).then(()=> {
         clear.clearBookShelf()
         printToDOM.addBookToDom()
-     }
-     )   
+     })   
+    } else if (event.target.className === "h1Title") {
+        console.log("clicked Title", event.target.parentNode.id)
+
+        databaseMethods.getBook(event.target.parentNode.id)
+        .then ( (book) => {
+        console.log("books!", book)
+        })
+        
+        
+
     }
 })
+
+
 
