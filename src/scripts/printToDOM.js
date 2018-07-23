@@ -9,28 +9,26 @@ const addBookToDOM = Object.create({}, {
         value: () => {
 
             const bookSHelfDiv = document.querySelector("#bookShelfDiv")
-            databaseMethods.getAllBooks().then((books) => 
-        
-            
-            {
-               
-                books.forEach(book => {
-                    if (!book.read) {
-                    const $cardDiv = $("<div>").addClass("cardDiv").attr("Id",`${book.id}` )
-                    const $h1Title = $("<h1>").addClass("h1Title").text(`${book.bookTitle}`).appendTo($cardDiv)
-                    const $pElPages = $("<p>").addClass("pElPages").text(`${book.bookPages}`).appendTo($cardDiv)
-                    const $pElSum = $("<p>").addClass("pElSum").text(`${book.bookSum}`).appendTo($cardDiv)
-                    const $checkBoxLabel = $("<label>").text("Click When Read").appendTo($cardDiv)
-                    const $checkBox = $("<input />").attr("type", "checkbox").addClass("checkBox").appendTo($cardDiv)
-                    $cardDiv.appendTo(bookSHelfDiv)
-                    }
-                    //     const bTitle = $("#book-title").val()
-                    //     const bSum = $("#book-Sum").val()
-                    //     const bPages = ($("#book-pages").val())
-                    //     console.log(getAllBooks)
-                })
-            }
-            )
+            //This calls the function. 
+            databaseMethods.getAllBooks()
+                .then((books) => {
+                    books.forEach(book => {
+                        if (!book.read) {
+                            const $cardDiv = $("<div>").addClass("cardDiv").attr("Id", `${book.id}`)
+                            const $h1Title = $("<h1>").addClass("h1Title").text(`Book Title: ${book.bookTitle}`).appendTo($cardDiv)
+                            const $pElPages = $("<p>").addClass("pElPages").text(` Book Summary: ${book.bookSum}`).appendTo($cardDiv)
+                            const $pElSum = $("<p>").addClass("pElSum").text(` Pages: ${book.bookPages}`).appendTo($cardDiv)
+                            const $checkBoxLabel = $("<label>").text("Click When Read").appendTo($cardDiv)
+                            const $checkBox = $("<input />").attr("type", "checkbox").addClass("checkBox").appendTo($cardDiv)
+                            $cardDiv.appendTo(bookSHelfDiv)
+                        }
+                        //     const bTitle = $("#book-title").val()
+                        //     const bSum = $("#book-Sum").val()
+                        //     const bPages = ($("#book-pages").val())
+                        //     console.log(getAllBooks)
+                    })
+                }
+                )
         }
     }
 })

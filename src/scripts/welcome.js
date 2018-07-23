@@ -22,7 +22,9 @@ const homePageObject = Object.create({}, {
         //appends to DOM
         $divMainPage.appendTo(mainDiv);
         $paraEl.appendTo($divMainPage);
-        $formBtn.appendTo($paraEl);
+        $formBtn.appendTo($divMainPage);
+
+        //This prints to the bookShelf Div from JSON Server storage. 
         printToDOM.addBookToDom()
     }
     }
