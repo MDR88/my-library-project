@@ -8,121 +8,28 @@
       "read": "true"
     },
     {
-      "bookTitle": "Book 1",
-      "bookSum": "Book SUm",
-      "bookPages": "4343",
-      "id": 2,
-      "read": "true"
+      "bookTitle": "Gone With The Wind",
+      "bookSum": "A Book About The Civil War",
+      "bookPages": "9454",
+      "id": 2
     },
     {
-      "bookTitle": "Book 2",
-      "bookSum": "Book SUm 2",
-      "bookPages": "45454",
-      "id": 3,
-      "read": "true"
+      "bookTitle": "The Outsiders",
+      "bookSum": "A Book About youth in the 1960's",
+      "bookPages": "2400",
+      "id": 3
     },
     {
-      "bookTitle": "Book 1",
-      "bookSum": "Book Sum 1 ",
-      "bookPages": "22",
-      "id": 4,
-      "read": "true"
+      "bookTitle": "The Grapes Of Wrath",
+      "bookSum": "A Book about the Dust Bowl.",
+      "bookPages": "56464",
+      "id": 4
     },
     {
-      "bookTitle": "b1",
-      "bookSum": "sum",
-      "bookPages": "433",
-      "id": 5,
-      "read": "true"
-    },
-    {
-      "bookTitle": "b1",
-      "bookSum": "sum",
-      "bookPages": "433",
-      "id": 6,
-      "read": "true"
-    },
-    {
-      "bookTitle": "b1",
-      "bookSum": "sum",
-      "bookPages": "433",
-      "id": 7,
-      "read": "true"
-    },
-    {
-      "bookTitle": "b2",
-      "bookSum": "sum",
-      "bookPages": "433",
-      "id": 8,
-      "read": "true"
-    },
-    {
-      "bookTitle": "b2",
-      "bookSum": "sum",
-      "bookPages": "433",
-      "id": 9,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 3",
-      "bookSum": "Summary",
-      "bookPages": "454",
-      "id": 10,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 3",
-      "bookSum": "Summary",
-      "bookPages": "454",
-      "id": 11,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 3",
-      "bookSum": "Summary",
-      "bookPages": "454",
-      "id": 12,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 3",
-      "bookSum": "Summary",
-      "bookPages": "454",
-      "id": 13,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 3",
-      "bookSum": "Summary",
-      "bookPages": "454",
-      "id": 14,
-      "read": "true"
-    },
-    {
-      "bookTitle": "Book 5",
-      "bookSum": "book Sum 5",
-      "bookPages": "54544",
-      "id": 15,
-      "read": "true"
-    },
-    {
-      "bookTitle": "book title 5",
-      "bookSum": "Book Summary 5",
-      "bookPages": "555",
-      "id": 16,
-      "read": "true"
-    },
-    {
-      "bookTitle": "book title 6",
-      "bookSum": "Book Summary 6",
-      "bookPages": "4544",
-      "id": 17
-    },
-    {
-      "bookTitle": "Book 1",
-      "bookSum": "Book 2",
-      "bookPages": "243",
-      "id": 18
+      "bookTitle": "The Wizard Of Oz",
+      "bookSum": "An imaginary tale about an alternate universe.",
+      "bookPages": "5000",
+      "id": 5
     }
   ]
 }
