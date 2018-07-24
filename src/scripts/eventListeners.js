@@ -55,12 +55,13 @@ body.addEventListener("click", () => {
         let bookSlice = (event.target.parentNode.id).slice(6)
         databaseMethods.getBook(bookSlice)
         .then ( (book) => {
-            console.log("books!", book)
-        bookEditForm.bookEditForm(`Book--${book.id}`)
+            console.log("The ID On Click", book)
+        bookEditForm.bookEditForm(book)
         
         })
-        
-        
+    } else if (event.target.className === "save-btn") {
+ console.log("Save Edit Button Clicked")
+
 
     }
 })
