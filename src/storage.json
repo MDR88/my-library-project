@@ -11,11 +11,12 @@
       "bookTitle": "Gone With The Wind",
       "bookSum": "A Book About The Civil War",
       "bookPages": "9454",
-      "id": 2
+      "id": 2,
+      "read": "true"
     },
     {
       "bookTitle": "The Outsiders",
-      "bookSum": "A Book About youth in the 1960's",
+      "bookSum": "A new book",
       "bookPages": "2400",
       "id": 3
     },
@@ -30,6 +31,18 @@
       "bookSum": "An imaginary tale about an alternate universe.",
       "bookPages": "5000",
       "id": 5
+    },
+    {
+      "bookTitle": "Rumble Fish",
+      "bookSum": "A Book about 1950's youth.",
+      "bookPages": "3463",
+      "id": 6
+    },
+    {
+      "bookTitle": "Tales Of Two Cities",
+      "bookSum": "About stuff",
+      "bookPages": "46434",
+      "id": 7
     }
   ]
 }

@@ -23,10 +23,15 @@ const databaseMethods = Object.create({}, {
         }
     },
     putBook: {
-        value: (id) => {
-            $.ajax({
+        value: (book, id) => {
+            return $.ajax({
                 url: `http://localhost:3000/books/${id}`,
-                method: "PUT"
+                method: "PUT",
+                data: {
+                    bookTitle: book.bookTitle,
+                    bookSum: book.bookSum,
+                    bookPages: book.bookPages
+                }
             })
         }
     },
