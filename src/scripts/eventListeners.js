@@ -1,6 +1,7 @@
 const $ = require("jquery");
 const welcome = require("./welcome")
 const AddBookForm = require("./addBookForm")
+const bookEditForm = require("./bookEditForm")
 const clear = require("./clear")
 const databaseMethods = require("./databaseMethods")
 const printToDOM = require("./printToDOM")
@@ -41,21 +42,22 @@ body.addEventListener("click", () => {
         
     }
 })
-    const bookShelf = document.querySelector("#bookShelfDiv");
-bookShelf.addEventListener("click", () => {
-
+     bookShelf = document.querySelector("#bookShelfDiv");
+      bookShelf.addEventListener("click", () => {
+    let bookSlice = (event.target.parentNode.id).slice(6)
     if (event.target.className === "checkBox") {
         console.log("checkBox")
-     databaseMethods.bookComplete(event.target.parentNode.id).then(()=> {
+     databaseMethods.bookComplete(bookSlice).then(()=> {
         clear.clearBookShelf()
         printToDOM.addBookToDom()
      })   
     } else if (event.target.className === "h1Title") {
-        console.log("clicked Title", event.target.parentNode.id)
-
-        databaseMethods.getBook(event.target.parentNode.id)
+        let bookSlice = (event.target.parentNode.id).slice(6)
+        databaseMethods.getBook(bookSlice)
         .then ( (book) => {
-        console.log("books!", book)
+            console.log("books!", book)
+        bookEditForm.bookEditForm(`Book--${book.id}`)
+        
         })
         
         

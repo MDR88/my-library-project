@@ -46,7 +46,8 @@
       "bookTitle": "b1",
       "bookSum": "sum",
       "bookPages": "433",
-      "id": 7
+      "id": 7,
+      "read": "true"
     },
     {
       "bookTitle": "b2",
@@ -94,7 +95,34 @@
       "bookTitle": "Book 3",
       "bookSum": "Summary",
       "bookPages": "454",
-      "id": 14
+      "id": 14,
+      "read": "true"
+    },
+    {
+      "bookTitle": "Book 5",
+      "bookSum": "book Sum 5",
+      "bookPages": "54544",
+      "id": 15,
+      "read": "true"
+    },
+    {
+      "bookTitle": "book title 5",
+      "bookSum": "Book Summary 5",
+      "bookPages": "555",
+      "id": 16,
+      "read": "true"
+    },
+    {
+      "bookTitle": "book title 6",
+      "bookSum": "Book Summary 6",
+      "bookPages": "4544",
+      "id": 17
+    },
+    {
+      "bookTitle": "Book 1",
+      "bookSum": "Book 2",
+      "bookPages": "243",
+      "id": 18
     }
   ]
 }
