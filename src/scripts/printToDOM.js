@@ -1,4 +1,5 @@
 const AddBookForm = require("./addBookForm")
+const EditBookForm = require("./bookEditForm")
 const clear = require("./clear")
 const databaseMethods = require("./databaseMethods")
 const $ = require("jquery")
@@ -14,7 +15,7 @@ const addBookToDOM = Object.create({}, {
                 .then((books) => {
                     books.forEach(book => {
                         if (!book.read) {
-                            const $cardDiv = $("<div>").addClass("cardDiv").attr("Id", `${book.id}`)
+                            const $cardDiv = $("<div>").addClass("cardDiv").attr("Id", `Book--${book.id}`)
                             const $h1Title = $("<h1>").addClass("h1Title").text(`Book Title: ${book.bookTitle}`).appendTo($cardDiv)
                             const $pElPages = $("<p>").addClass("pElPages").text(` Book Summary: ${book.bookSum}`).appendTo($cardDiv)
                             const $pElSum = $("<p>").addClass("pElSum").text(` Pages: ${book.bookPages}`).appendTo($cardDiv)
